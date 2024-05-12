@@ -4,8 +4,8 @@ platform :ios, '11.0'
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
-  pod 'LZIOSCommon'
-  pod 'LZIOSShare' 
+  pod 'LZIOSCommon', :git=>'git@github.com:rookielz93/LZIOSCommon.git'
+  pod 'LZIOSShare', :git=>'git@github.com:rookielz93/LZIOSShare.git'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
